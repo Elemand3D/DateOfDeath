@@ -63,29 +63,9 @@ namespace DateOfDeath.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap background {
-            get {
-                object obj = ResourceManager.GetObject("background", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap background_jpg {
             get {
                 object obj = ResourceManager.GetObject("background.jpg", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap background1 {
-            get {
-                object obj = ResourceManager.GetObject("background1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -123,49 +103,9 @@ namespace DateOfDeath.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap shading {
-            get {
-                object obj = ResourceManager.GetObject("shading", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap shadingCrutch {
-            get {
-                object obj = ResourceManager.GetObject("shadingCrutch", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap tittleLeftToLive {
             get {
                 object obj = ResourceManager.GetObject("tittleLeftToLive", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap tittleLeftToLive1 {
-            get {
-                object obj = ResourceManager.GetObject("tittleLeftToLive1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap tittleLeftToLive2 {
-            get {
-                object obj = ResourceManager.GetObject("tittleLeftToLive2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

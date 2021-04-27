@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -23,11 +24,15 @@ namespace DateOfDeath
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            //linkLabel1.LinkClicked += linkLabel1_LinkClicked;
             pictureBox1.BackColor = Color.Transparent;
             pictureBoxTittleLeftToLive.BackColor = Color.Transparent;
             label1.BackColor = Color.Transparent;
             label3.BackColor = Color.Transparent;
+            label2.BackColor = Color.Transparent;
+            label4.BackColor = Color.Transparent;
             pictureBoxNeon.BackColor = Color.Transparent;
+            linkLabel1.BackColor = Color.Transparent;
         }
 
         private void pictureBox1_MouseDown(object sender, MouseEventArgs e)
@@ -86,6 +91,14 @@ namespace DateOfDeath
             date.LogicRandomDate();
             story.LogicRandomStory();
             label1.Text = $"{date.year} {date.yearTitle}, {date.day} {date.dayTitle}, {date.houre} {date.houreTitle}, \n {date.minute} {date.minuteTitle}, {date.second} {date.secondTitle}.";
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Process prc = new Process();
+            prc.StartInfo.FileName = @"https://vk.com/indi_v_razrezah";
+            prc.StartInfo.UseShellExecute = true;
+            prc.Start();
         }
     }
 }

@@ -34,6 +34,9 @@ namespace DateOfDeath
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBoxNeon = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxTittleLeftToLive)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxNeon)).BeginInit();
@@ -41,11 +44,12 @@ namespace DateOfDeath
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox1.Image = global::DateOfDeath.Properties.Resources.DeathButton;
-            this.pictureBox1.Location = new System.Drawing.Point(46, 13);
+            this.pictureBox1.Location = new System.Drawing.Point(80, 21);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(352, 113);
+            this.pictureBox1.Size = new System.Drawing.Size(288, 110);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -56,7 +60,7 @@ namespace DateOfDeath
             // pictureBoxTittleLeftToLive
             // 
             this.pictureBoxTittleLeftToLive.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pictureBoxTittleLeftToLive.Image = global::DateOfDeath.Properties.Resources.tittleLeftToLive2;
+            this.pictureBoxTittleLeftToLive.Image = global::DateOfDeath.Properties.Resources.tittleLeftToLive;
             this.pictureBoxTittleLeftToLive.Location = new System.Drawing.Point(80, 132);
             this.pictureBoxTittleLeftToLive.Name = "pictureBoxTittleLeftToLive";
             this.pictureBoxTittleLeftToLive.Size = new System.Drawing.Size(288, 91);
@@ -97,13 +101,45 @@ namespace DateOfDeath
             this.label3.Text = "Рано или позно вы вероятно умрёте... \r\nА может и нет... Хуй его знает";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // linkLabel1
+            // 
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Location = new System.Drawing.Point(174, 668);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(74, 15);
+            this.linkLabel1.TabIndex = 5;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "Этот паблик";
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(17, 668);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(160, 15);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "Кстати если подписаться на";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(246, 668);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(175, 15);
+            this.label4.TabIndex = 7;
+            this.label4.Text = "То ваши годы жизни удвоятся!\r\n";
+            // 
             // FormDateOfDeath
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::DateOfDeath.Properties.Resources.background1;
+            this.BackgroundImage = global::DateOfDeath.Properties.Resources.background_jpg;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(439, 749);
+            this.ClientSize = new System.Drawing.Size(439, 712);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.linkLabel1);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.pictureBoxNeon);
             this.Controls.Add(this.label1);
@@ -117,6 +153,7 @@ namespace DateOfDeath
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxTittleLeftToLive)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxNeon)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -127,6 +164,9 @@ namespace DateOfDeath
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBoxNeon;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label4;
     }
 }
 
