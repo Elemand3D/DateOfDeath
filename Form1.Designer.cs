@@ -1,7 +1,7 @@
 ﻿
 namespace DateOfDeath
 {
-    partial class Form1
+    partial class FormDateOfDeath
     {
         /// <summary>
         ///  Required designer variable.
@@ -68,12 +68,12 @@ namespace DateOfDeath
             // 
             this.label1.Font = new System.Drawing.Font("Impact", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.Violet;
-            this.label1.Location = new System.Drawing.Point(5, 261);
+            this.label1.Location = new System.Drawing.Point(0, 261);
             this.label1.Name = "label1";
             this.label1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label1.Size = new System.Drawing.Size(422, 87);
+            this.label1.Size = new System.Drawing.Size(438, 87);
             this.label1.TabIndex = 2;
-            this.label1.Text = "17 Лет, 138 Дней, 23 Часов, 13 Минут, 40 Секунд.\r\n";
+            this.label1.Text = "Извините, ваше будущее ещё не предопределено";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pictureBoxNeon
@@ -81,7 +81,7 @@ namespace DateOfDeath
             this.pictureBoxNeon.Image = global::DateOfDeath.Properties.Resources.neonFrame;
             this.pictureBoxNeon.Location = new System.Drawing.Point(-29, 351);
             this.pictureBoxNeon.Name = "pictureBoxNeon";
-            this.pictureBoxNeon.Size = new System.Drawing.Size(490, 223);
+            this.pictureBoxNeon.Size = new System.Drawing.Size(490, 284);
             this.pictureBoxNeon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxNeon.TabIndex = 3;
             this.pictureBoxNeon.TabStop = false;
@@ -90,29 +90,27 @@ namespace DateOfDeath
             // 
             this.label3.Font = new System.Drawing.Font("Segoe Print", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label3.ForeColor = System.Drawing.Color.MediumOrchid;
-            this.label3.Location = new System.Drawing.Point(36, 383);
+            this.label3.Location = new System.Drawing.Point(29, 387);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(368, 152);
+            this.label3.Size = new System.Drawing.Size(380, 213);
             this.label3.TabIndex = 4;
-            this.label3.Text = "Я умру во время секс-вечеринки. Подруга позовёт меня на элитную оргию. Мы с ней б" +
-    "ужем там единственными девушками. Нас свяжут и будут издеваться, пока мы не умрё" +
-    "м от увечий";
+            this.label3.Text = "Рано или позно вы вероятно умрёте... \r\nА может и нет... Хуй его знает";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // Form1
+            // FormDateOfDeath
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::DateOfDeath.Properties.Resources.background1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(439, 658);
+            this.ClientSize = new System.Drawing.Size(439, 749);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.pictureBoxNeon);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBoxTittleLeftToLive);
             this.Controls.Add(this.pictureBox1);
             this.DoubleBuffered = true;
-            this.Name = "Form1";
+            this.Name = "FormDateOfDeath";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
