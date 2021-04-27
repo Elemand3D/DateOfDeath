@@ -24,7 +24,6 @@ namespace DateOfDeath
             pictureBox1.BackColor = Color.Transparent;
             pictureBoxTittleLeftToLive.BackColor = Color.Transparent;
             label1.BackColor = Color.Transparent;
-            label2.BackColor = Color.Transparent;
             label3.BackColor = Color.Transparent;
             pictureBoxNeon.BackColor = Color.Transparent;
         }
@@ -54,7 +53,7 @@ namespace DateOfDeath
             int rum1 = rnd.Next(rumor1.Length);
             label3.Text = ((rumor1[rum1]));
             date.LogicRandomDate();
-            label1.Text = $"{date.year} Лет, {date.day} Дней.";
+            label1.Text = $"{date.year} Лет, {date.day} Дней, {date.houre} Часов, \n {date.minute} Минут, {date.second} Секунд.";
         }
     }
 }

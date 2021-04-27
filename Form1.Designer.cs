@@ -32,7 +32,6 @@ namespace DateOfDeath
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBoxTittleLeftToLive = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.pictureBoxNeon = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -67,27 +66,15 @@ namespace DateOfDeath
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Impact", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.Violet;
-            this.label1.Location = new System.Drawing.Point(24, 261);
+            this.label1.Location = new System.Drawing.Point(5, 261);
             this.label1.Name = "label1";
             this.label1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label1.Size = new System.Drawing.Size(392, 39);
+            this.label1.Size = new System.Drawing.Size(422, 87);
             this.label1.TabIndex = 2;
-            this.label1.Text = "17 Лет, 138 Дней, 13 Часов,";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Impact", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label2.ForeColor = System.Drawing.Color.Violet;
-            this.label2.Location = new System.Drawing.Point(67, 309);
-            this.label2.Name = "label2";
-            this.label2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label2.Size = new System.Drawing.Size(315, 39);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "14 Минут, 50 Секунд.";
+            this.label1.Text = "17 Лет, 138 Дней, 23 Часов, 13 Минут, 40 Секунд.\r\n";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pictureBoxNeon
             // 
@@ -121,7 +108,6 @@ namespace DateOfDeath
             this.ClientSize = new System.Drawing.Size(439, 658);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.pictureBoxNeon);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBoxTittleLeftToLive);
             this.Controls.Add(this.pictureBox1);
@@ -133,7 +119,6 @@ namespace DateOfDeath
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxTittleLeftToLive)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxNeon)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -142,7 +127,6 @@ namespace DateOfDeath
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBoxTittleLeftToLive;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBoxNeon;
         private System.Windows.Forms.Label label3;
     }

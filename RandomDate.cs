@@ -25,6 +25,9 @@ namespace DateOfDeath
         {
             year = rnd1.Next(0, 60);
             day = rnd1.Next(0, 365);
+            houre = rnd1.Next(0, 23);
+            minute = rnd1.Next(0, 59);
+            second = rnd1.Next(0, 59);
         }
     }
 }
