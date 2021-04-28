@@ -24,7 +24,6 @@ namespace DateOfDeath
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            //linkLabel1.LinkClicked += linkLabel1_LinkClicked;
             pictureBox1.BackColor = Color.Transparent;
             pictureBoxTittleLeftToLive.BackColor = Color.Transparent;
             label1.BackColor = Color.Transparent;
@@ -33,6 +32,7 @@ namespace DateOfDeath
             label4.BackColor = Color.Transparent;
             pictureBoxNeon.BackColor = Color.Transparent;
             linkLabel1.BackColor = Color.Transparent;
+            pictureBoxCross.BackColor = Color.Transparent;
         }
 
         private void pictureBox1_MouseDown(object sender, MouseEventArgs e)
@@ -99,6 +99,28 @@ namespace DateOfDeath
             prc.StartInfo.FileName = @"https://vk.com/indi_v_razrezah";
             prc.StartInfo.UseShellExecute = true;
             prc.Start();
+        }
+
+        private void header_MouseDown(object sender, MouseEventArgs e)
+        {
+            header.Capture = false;
+            Message m = Message.Create(Handle, 0xa1, new IntPtr(2), IntPtr.Zero);
+            WndProc(ref m);
+        }
+
+        private void pictureBoxCross_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void pictureBoxCross_MouseDown(object sender, MouseEventArgs e)
+        {
+            pictureBoxCross.BorderStyle = BorderStyle.Fixed3D;
+        }
+
+        private void pictureBoxCross_MouseUp(object sender, MouseEventArgs e)
+        {
+            pictureBoxCross.BorderStyle = BorderStyle.None;
         }
     }
 }
